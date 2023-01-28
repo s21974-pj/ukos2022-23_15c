@@ -1,0 +1,79 @@
+Po uruchomieniu PowerShell'a z uprawnieniami administratora wylaczylem wymagania podpisania skryptow przez Microsoft. Po wpisaniu polecenia Set-ExecutionPolicy Bypass i potwierdzeniu za pomoca "Y".
+
+Po uruchomieniu pierwszego polecenia(zawaierajacego pomoc) Get-Help Get-ExecutionPolicy, wykonalem komende Get-ExecutionPolicy w celu zweryfikowania wprowadzanych wczesniej zmian(bypass).
+
+W wyniku dzialania kolejnego polecenia(Get-Help Get-ExecutionPolicy -Examples) dowiedzialem sie, ze moj system nie ma zaktualizowanego pliku z pomoca do tego polecenia i moge ja zaktualizowac.
+
+Polecenie Get-Module -ListAvailable wyswietlilo mi liste dostepnych modulow. Po dodaniu "| ? {$_.Version -ge "2.0.0.0"}" do komendy, listy dostepnych modulow zostala odfiltrowana do modulow w wersji rownej lub nowszej niz 2.0.0.0.
+
+Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} to polecenie wyswietlilo komendy we wszystkich modulach w wersji powyzej lub rownej 2.0.0.0. Przez chwile myslalem, ze okno z PS mi sie zawiesilo, ale po prostu polecenie wykonuje sie bardzo 'skokowo'.
+
+Kolejne polecenie(Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} | ? {($_.Name -like "Add-*") -or ($_.Name -like "Get-*")}) jeszcze bardziej uszczuplilo liste wynikowa. Pojawily sie tylko te, ktore dodatkowo w nazwie maja "Add-" lub "Get-".
+
+Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} | ? {($_.Name -like "Add-*") -or ($_.Name -like "Get-*")} | Out-GridView ta komenda sprawia, ze powyzsze dane sa prezentowane w zdecydowanie bardziej przyjemny sposob.
+
+$nazwaPliku = "mojaNazwaPliku.txt"
+Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"} | % {Get-Command -Module $_.Name} | ? {($_.Name -like "Add-*") -or ($_.Name -like "Get-*")} | Out-File $env:TEMP\$nazwaPliku zapisalo powyzsza liste do pliku. Poszukiwania pliku dalej trwaja... Plik sie odnalazl w lokalizacji C:\Users\ksuch\AppData\Local\Temp.
+
+
+
+
+
+Uzylem takiego polecenia jak ponizej:
+$job = Start-BitsTransfer -Source https://releases.ubuntu.com/22.04.1/ubuntu-22.04.1-live-server-amd64.iso?_ga=2.104572224.1985420877.1674944549-1682304644.1674944549 -Destination C:\Kamil\Ubuntu_Server\ubuntu-22.04.1-live-server-amd64.iso -Asynchronous -DisplayName "Moj Bits Transfer"
+
+Zmodyfikowalem polecenie, poniewaz nie znam Pana nr IP, a skoro mamy pobrac duzy plik, to wybralem taki, ktory mi sie przyda w najbliszym czasie. ;)
+
+Po zakonczeniu transferu(Transferred w kolumnie JobState, polecenia Get-BitsTransfer), wykonalem komende Complete-BitsTransfer -BitsJob $job w celu zakonczenia jobu transferu.
+
+
+
+
+Uzylem komendy Measure-Command {Get-ChildItem -Path C:\Windows}, wykonala sie w czasie 8 milisekund, zajelo to 83374 taktow procesora.
+
+Get-Alias | ? {$_.Definition -like "Get-ChildItem"} po wpisaniu tej komendy zobaczylem aliasy Get-ChildItem, znane mi z basha.
+
+ls C:\ | %{Sleep -Milliseconds 250; return $_} | Format-Table ta komenda wyswietlila liste plikow na moim dysku C, z odstepami cwierc sekundowymi.
+
+
+
+Uruchomilem notatnik z konsoli przy uzyciu operatora wolania & C:\Windows\notepad.exe
+
+
+
+Po wykonaniu tego polecenia cd HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall przenioslem sie do rejestru systemowego, jakbym sie poruszal po dysku.
+
+ls | %{Get-ItemProperty $_.pspath | Select-Object DisplayName, InstallDate, UninstallString} | Format-Table -AutoSize dzieki dodatkowym parametrom polecenia ls, informacje z rejestru sa wyswietlane w zdecydowanie bardziej przyjaznej formie niz za pomoca samego polecenia ls.
+
+
+
+Get-WmiObject -Class Win32_Product | Format-Table -AutoSize wywietlone dane sa bardzo nieczytelne dla czlowieka
+
+Get-WmiObject -Class Win32_Product | Select-Object Name, Vendor | Format-Table -AutoSize dzieki temu poleceniu sa zdecydowanie bardziej human-readable. ;)
+
+Get-WmiObject -Class Win32_Product | ?{$_.Vendor.toLower() -like "*microsoft*"} | Select-Object Name, Vendor | Format-Table -AutoSize efekt taki sam jak wyzej, tylko lista ograniczona do produktow autorstwa Microsoftu, wystapil mi blad liscie, ciekawie wyglada, latwo go przeoczyc:
+
+--------------------------------------poczatek------------------------------------------------------------
+SDK ARM Additions                                              Microsoft Corporation
+Universal CRT Tools x64                                        Microsoft Corporation
+You cannot call a method on a null-valued expression.
+At line:1 char:40
++ ... ass Win32_Product | ?{$_.Vendor.toLower() -like "*microsoft*"} | Sele ...
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+MSI Development Tools                                          Microsoft Corporation
+vs_vswebprotocolselectormsi                                    Microsoft Corporation
+icecap_collectionresourcesx64                                  Microsoft Corporation
+Windows App Certification Kit x64                              Microsoft Corporation
+VS Script Debugging Common                                     Microsoft Corporation
+--------------------------------------koniec---------------------------------------------------------------
+
+
+
+Get-PSDrive ta komenda zwraca dyski PowerShell'a
+
+Ostatnia funkcja z notyfikacja w petli bardzo fajna. Moim zdaniem pokazuje duza elastycznosc PowerShell'a.
+
+
