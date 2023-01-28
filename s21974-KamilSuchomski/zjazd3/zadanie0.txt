@@ -1,0 +1,30 @@
+1.Przejdz do swojego katalogu domowego
+
+2.Wydaj komende: ls -a
+
+3.Zobacz ile plikow wypisalo.
+
+4.Teraz wydaj komende: ls -a | grep D
+HINT: Jesli nie masz zadnego pliku czy katalogu z literka D to wybierz inna literke, ktora juz bedzie w nazwie jakiegos pliku czy katalogu.
+
+5.Zobacz ile teraz jest wynikow. Co sie stalo?
+Otoz program grep sluzy do wyszukiwania wierszy w pliku lub strumieniu wejsciowym, ktore pasuja do wzorca. Tu podano wzorzec jako "D".
+
+6.A teraz wykonaj komende: ls -a | grep D > lista_plikow_z_literka_d.txt
+
+7.Zobacz czy utworzyl sie jakis plik?
+Jaka jest jego tresc?
+Co znaczy | oraz co znaczy > ?
+
+8.A teraz wykonaj komende: ls -a | grep D | tee lista_plikow_z_literka_d_2.txt
+
+9.Zobacz czy plik się utworzyl?
+Jaka jest tresc wzgledem poprzedniej proby bez programu tee?
+Co robi program tee?
+
+
+Wykonanie:
+Po przekierowaniu wyjscia ls -a do programu grep s, jako rezultat otrzymalem tylko pliki zawierajace litere s. 
+Po dodaniu operatora ">" wyjscie programu grep s zostalo przekierowane do pliku i nic sie nie wyswietlilo w terminalu.
+| oznacza przekierowanie standardowego wyjscia programu po lewej stronie operatora, do standardowego wejscia programu po prawej stronie operatora.
+Program tee sluzy do pobierania danych ze standardowego wejscia i wypisania ich na standardowe wyjscie oraz do pliku(jesli zostal dodany).

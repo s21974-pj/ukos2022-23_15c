@@ -1,0 +1,26 @@
+23.10.2022
+
+W utworzonej na swoim koncie strukturze podkatalogow przeprowadzic eksperymenty:
+-usuwajac wszelkie uprawnienia dostepu do katalogu biezacego
+-usuwajac wszelkie uprawnienia dostepu do katalogu nadrzednego (nadkatalogu).
+W jakich przypadkach mozemy wykonac wtedy polecenie cd ? 
+W jakich przypadkach mozemy wykonac polecenie chmod ? 
+Czy mozemy bezposrednio przeskoczyc do katalogu ABC/XYZ, jesli nie mamy uprawnienia wstepu do ABC, ale mamy do XYZ ?
+Czy mozemy takze wrocic korzystajac z polecnia cd - ?
+
+
+Wykonanie:
+
+-usuniecie wszelkich uprawnien dostepu do katalogu biezacego
+-usuniecie wszelkich uprawnien dostepu do katalogu nadrzednego
+
+Wnioski:
+-polecenie cd mozna wykonac tylko do katalogow do ktorych mam dostep, w innym wypadku pojawi sie komunikat o braku dostepu
+-polecenie chmod mozna wykonac tylko dla katalogow i plikow, ktorych jestesmy wlascicielami
+
+Pytania:
+Czy możemy bezposrednio przeskoczyc do katalogu ABC/XYZ, jesli nie mamy uprawenienia wstepu do ABC, ale mamy do XYZ?
+Nie, nie mozemy, poniewaz katalog XYZ znajduje sie w katalogu ABC, do ktorego nie mamy uprawnienia wstepu.
+
+Czy mozemy takze wrocic korzystajac z polecenia cd -?
+Nie, też nie możemy.

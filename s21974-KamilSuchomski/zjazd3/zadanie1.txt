@@ -1,0 +1,38 @@
+program ps sluzy do wyswietlania listy procesow. 
+
+Zadania:
+
+A: Zobacz co sie stanie jesli wpiszemy w terminalu:
+
+ps
+
+ps -a
+
+ps x
+
+ps axu
+INFO: tu kolejnosc parametrow a, x, u nie ma znaczenie a jedynie fakt, ze sa podane. Dowolna kolejnosc powinna dac ten sam wynik.
+
+Jak myslisz, co oznacza znak zapytania w kolumnie 2?
+Nie wiesz? A gdzie moze być wyjasnienie?
+
+B: Jak wykonasz ponizsze 2 zadania?
+
+Wyswietl wszystkie procesy bash
+
+Wyswietl wszystkei procesy nalezace do uzytkownika root
+
+
+Wykonanie:
+A:
+-"ps" - wyswietla liste procesow
+-"ps a" - wyswietla liste najczesciej uzywanych procesow
+-"ps x" - wyswietla liste procesow bez ustalonego terminala 
+-"ps axu" - wyswietla liste najczesciej uzywanych procesow, lacznie z tymi bez ustalonego terminala, lacznie z uzytkownikami, ktorzy uruchomili proces
+Znak zapytania w drugiej kolumnie oznacza, ze proces nie zostal uruchomiony z poziomu terminala.
+
+
+B:
+- uzyje komendy "ps -e"
+- uzyje komendy "ps -u root"
+

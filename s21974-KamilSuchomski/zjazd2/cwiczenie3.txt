@@ -1,0 +1,12 @@
+23.10.2022
+
+W zespolach 2- lub 3-osobowych (w opisie zadania na githubie prosze umiescic login osob z zespolu) wyprobowac mozliwosc komunikacji przez wspoldzielony plik: na jednym z kont w zespole utworzyc pusty plik i przydzielic odpowiednie uprawnienia dostepu (do pliku i do katalogu domowego). Wpisywac i odczytywac komunikaty przy uzyciu polecen:
+-echo tresc_komunikatu > plik
+-cat plik
+Sprawdzic, jaki skutek powoduje zamiana operatora > na operator >> w poleceniu echo. Uruchom takze drugi terminal i wykonaj w nim komende tail -f plik i powtorz powyzsze cwiczenie w pierwszym terminalu (komunikacja za pomoca pliku).
+
+Zadanie wykonalem z kolega Cyprianem (s27281).
+
+plik: "/home/PJWSTK/s21974/ukos_prawa/katalog/katalog2/podkatalog3/komunikacja.txt"
+
+Operator > powoduje nadpisanie pliku, natomiast operator >> powoduje dodanie tekstu w nowej linii.

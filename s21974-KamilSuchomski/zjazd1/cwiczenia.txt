@@ -1,0 +1,143 @@
+---ZADANIA--- cz.1
+
+1.Uruchom terminal.
+
+Uruchomilem terminal przy pomocy polecenia "ssh s21974@szuflandia.pjwstk.edu.pl" wpisanym w wierszu polecen w systemie Windows.
+
+
+2.Wyswietl zawartosc aktualnego katalogu.
+
+Wpisalem polecenie "ls" i nacisnalem enter. W rezultacie wyswietlily sie nazwy plikow i katalogow(w kolorze niebieskim) znajdujace sie w aktualnym katalogu.
+
+
+3.Sprawdz gdzie aktualnie sie znajdujesz.
+
+Wpisalem polecenie "pwd" i nacisnalem enter. W rezultacie otrzymalem bezwzgledna sciezke do aktualnego katalogu.
+Wynik:"/home/PJWSTK/s21974"
+
+
+4.Przejdz do katalogu Pulpit za pomoca scieżki wzglednej
+
+W Szuflandii nie ma katologu Pulpit, domyslnie katalog Pulplit znajduje sie w "/home/nazwa_uzytkownika". Zadanie kontynuowalem na maszynie wirtualnej z systemem Ubuntu.
+
+Po otworzeniu terminalu na maszynie wirtualnej znajduje sie w "/home/oem".
+
+-maszyna wirtualna Ubuntu-
+Wykonuje polecenie "cd ./Desktop".
+
+
+5.Sprawdz gdzie jestes.
+
+-maszyna wirtualna Ubuntu-
+Wykonuje polecenie "pwd", w wyniku ktorego otrzymuje "/home/oem/Desktop".
+
+
+6.Wyswietl zawartosc biezacego katalogu.
+
+-maszyna wirtualna Ubuntu-
+Wykonuje polecenie "ls", w wyniku ktorego otrzymuje nazwy plikow. Znajduje sie u mnie tylko jeden plik o nazwie "oem-config-prepare-gtk.desktop".
+
+
+7.Wyswietl zawartosc swojego katalogu domowego bez przechodzenia do niego (ls z odpowiednim parametrem).
+
+-maszyna wirtualna Ubuntu-
+Wykonalem polecenie "ls /home/oem". W rezultacie wyswietlily sie nazwy plikow i katalogow z mojego katalogu domowego ("/home/oem"), mimo ze caly czas znajdowalem sie w katalogu Desktop.
+
+
+8.Przejdz do katalogu Obrazy (lub innego katalogu, ktory jest dostepny - podaj wprost, ze zmieniasz katalog na inny bo np. Obrazy nie sa u Ciebie dostepne) w twoim katalogu domowym za pomoca sciezki wzglednej.
+
+-maszyna wirtualna Ubuntu-
+Wykonuje polecenie "cd ../Obrazy".
+
+
+9.Sprawdz gdzie jestes.
+
+-maszyna wirtualna Ubuntu-
+Wykonuje polecenie "pwd".
+Wynik: "/home/oem/Obrazy"
+
+
+10.Zobacz do jakiego katalogu przejdziesz za pomoca sciezki ././././././
+W opisie rozwiazania prosze umiescic rowniez to jak rozumiesz co sie wlasciwie stalo.
+Dlaczego znalazla/es sie w tym miejscu do ktorego przeniosla Cie ta sciezka?
+Czy dodanie kilku ./././././ na poczatku/srodku/koncu powoduje, że sciezka sie zmieni?
+Co ta sciezka oznacza/soba reprezentuje?
+
+-maszyna wirtualna Ubuntu-
+Wykonuje polecenie "cd ././././././". W rezultacie znajduje sie w tym samym miejscu, w ktorym bylem("/home/oem/obrazy"). Sciezka "./" oznacza bierzacy katalog, dlatego po wykonaniu powyzszego polecenia dalej znajduje sie w tym samym miejscu. Dodanie "./" gdziekolwiek w poleceniu niczego nie zmieni.
+
+
+11.Przejdz do swojego katalogu domowego za pomoca sciezki bezwzglednej.
+-maszyna wirtualna Ubuntu-
+Wykonuje polecenie "cd /home/oem".
+
+
+12.Zobacz co sie stanie jak wpiszesz komende 'cd /root'. Jak juz to zrobisz, zastanow sie co sie stalo. Poszukaj w Internecie.
+-maszyna wirtualna Ubuntu-
+Wykonuje polecenie "cd /root". W odpowiedzi otrzymalem "bash: cd: /root Brak dostepu".
+Dzieje sie tak, poniewaz jako uzytkownik nie ma dostepu do katalogu root.
+
+
+13.Zobacz, co sie stanie, jesli wcisiesz kombinacje klawiszy: Ctrl+Alt+F1
+-maszyna wirtualna Ubuntu-
+Po wcisnieciu kombinacji Ctrl+Alt+F1 nastapilo wylogowanie z systemu.
+
+
+14.A teraz co sie stanie po: Alt+F7
+-maszyna wirtualna Ubuntu-
+Po wcisnieciu kombinacji Alt+F7 moge zmienic polozenie okna terminala za pomoca myszy.
+
+
+
+
+---ZADANIA--- cz.2
+
+1.Korzystajac z komend cd oraz mkdir stworz nastepujace drzewo katalogow w swoim katalogu domowym (w dowolnym podkatalogu, albo bezposrednio w ~):
+ukos
+
+ |\ katalog
+
+ |   |\ katalog2
+
+ |    \ katalog3
+
+  \ klamka
+
+Wykonanie:
+Znajdujac sie w swoim katalogu domowym uzylem komendy "mkdir ukos".
+Nastepnie "cd ukos", "mkdir klamka" i "mkdir katalog".
+Przeszedlem do katalogu "katalog" za pomoca komendy "cd katalog" i uzylem komend "mkdir katalog2" oraz "mkdir katalog3".
+
+
+2.W katalogu ukos/klamka stworz pliki zajecia2.txt zajecia2.log inny.txt nowy.txt
+
+Uzylem komendy "cd ~/ukos/klamka".
+Wykorzystalem wielokrotnie komende touch, do utworzenia plikow.
+"touch zajecia2.txt"
+"touch zajecia2.log"
+"touch inny.txt"
+"touch nowy.txt"
+
+3.Za pomoca jednego polecenia mkdir stworz w katalogu ukos nastepujacy katalog: ukos/to/jest/dluga/nazwa
+
+Znajdujac sie w katalogu "ukos" uzylem komendy "mkdir -p ukos/to/jest/dluga/nazwa".
+
+
+4.nastepnie umiesc w katalogu ukos/to/jest/dluga/nazwa plik dane.txt
+
+Znajdujac sie w katalogu "ukos" uzylem komendy "touch ukos/to/jest/dluga/nazwa/dane.txt".
+
+
+5.Usun z katalogu ukos/klamka wszystkie pliki z rozszerzeniem txt
+
+Znajdujac sie w katalogu "ukos" uzylem komendy "rm -r klamka/*.txt".
+
+
+6.Usun katalog ukos/katalog/katalog2
+
+Znajdujac sie w katalogu "ukos" uzylem komendy "rmdir katalog/katalog2".
+
+
+7.Usun caly katalog klamka za pomoca jednego polecenia
+
+Znajdujac sie w katalogu "ukos" uzylem komendy "rm -r klamka".

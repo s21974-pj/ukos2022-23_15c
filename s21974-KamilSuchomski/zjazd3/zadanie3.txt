@@ -1,0 +1,49 @@
+W terminalu jest kilka przydatnych skrotow klawiszowych. Jednym z nich jest CTRL+C lub jak to jest czesto podawane C-c lub ^C. Niektorzy z Panstwa juz go mieli okazjz przetestowac. Jest to sposob na wylaczenie aktywnego programu w terminalu. Prosze go przetestowac w taki sposob, ze:
+
+Uruchom komende cat be parametrow
+
+Wcisnij CTRL+C i zobacz co sie stanie
+
+Kolejnym fajnym (zalezy dla kogo :) ) skrotem klawiszowym jest CTRL+D. Sluzy on do zakonczenia strumienia wejsciowego. Dziala to troche inaczej niz poprzednie rozwiazanie, mimo ze na pierwszy rzut okna wyglada tak samo. Tym razem nie wysyla sygnalu zakonczenia, a jedynia zamyka strumien wejsciowy. Jest to bardzo przydatne, jesli chcemy zakonczyc dzialanie jakiegos programu korzystajacego ze standardowego wejscia (stdin), ale w sposob mozliwie bezpieczny.
+
+Zobacz co sie stanie:
+
+Wydaj komende cat > wynik3_1.txt
+
+Wpisz tekst witaj bez wciskania klawisza Enter
+
+Wcisnij CTRL+C
+
+Zobacz co sie znalazlo w pliku wynik3_1.txt
+
+
+
+Wydaj komende cat > wynik3_2.txt
+
+Wpisz tekst witaj bez wciskania klawisza Enter
+
+Wcisnij CTRL+D (mozliwe, ze bedzie trzeba wcisnac go 2x)
+
+Zobacz co sie znalazlo w pliku wynik3_2.txt
+
+W opisie rozwiazania zadania umiesc:
+
+jak rozumiesz co sie stalo?
+
+czym oba te przyklady sie roznia?
+
+DLACZEGO sie roznia?
+
+
+Wykonanie:
+Po wykonaniu komendy "cat" i nacisnieciu Ctrl+C terminal ponownie oczekiwal na podanie polecenia.
+Po wykonaniu komendy "cat > wynik3_1.txt", wpisaniu witaj i nacisnieciu Ctrl+C w pliku wynik3_1.txt nic nie bylo.
+Po wykonaniu komendy "cat > wynik3_2.txt", wpisaniu witaj i nacisnieciu Ctrl+D w pliku wynik3_2.txt jest napis witaj.
+
+Ctrl+C wylacza aktywny program w temrinalu, dlatego po wpisaniu witaj i uzyciu skrotu w pliku wynik3_1.txt nic sie nie pojawilo.
+Ctrl+D zakoncza strumien wejsciowy, dlatego po wpisaniu witaj i uzyciu skrotu w pliku wynik3_2.txt pojawil sie napis witaj.
+
+Przyklady roznia sie tym, ze pierwszy skrot zamyka program, a drugi zakoncza strumien wejsciowy, dlatego program cat wykonal sie i zapisal napis w pliku, poniewaz w momencie nacisniecia skrotu przekierowal to co znajdowalo sie w strumieniu wejscia, na strumien wyjscia(w tym przypadku plik wynik3_2.txt).
+
+Oba powyzsze skroty roznia sie, dlatego, ze Ctrl+C konczy dzialanie programu, a Ctrl+D konczy strumien wejsciowy i program dalej dziala.
+ 

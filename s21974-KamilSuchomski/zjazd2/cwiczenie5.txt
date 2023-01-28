@@ -1,0 +1,5 @@
+23.10.2022
+
+W opisie bash-a (man) przeczytac opis polecenia wewnetrznego umask i wyprobowac jego dzialanie sprawdzajac, a nastepnie zmieniajac swoja maske trybu pliku i tworzac za kazdym razem nowe pliki (przy uzyciu polecenia touch plik), a pozniej sprawdzajac uzyskane uprawnienia dostepu do nich (polecenie ls -l). Jaka operacja logiczna na bitach domyslnych uprawnien dostepu oraz maski jest wykonywana?
+
+Domyslna maska to 022. Operacja logiczna wykonywana na bitach domyslnych uprawnien dostepu oraz maski to koniunkcja z zanegowana wartoscia maski. 

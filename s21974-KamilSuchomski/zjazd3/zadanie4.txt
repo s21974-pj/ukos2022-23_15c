@@ -1,0 +1,53 @@
+INFO: Zadanie do wykonania na linuxie z dostepnym srodowiskiem graficznym.
+
+CTRL+Z sluzy do wstrzymania biezacego procesu i przeniesienia go do tla. To znaczy, ze program jest w pamieci, ale nie wykonuje zadnych operacji. Jest wstrzymany.
+
+Zobacz co sie stanie:
+
+Wpisz komende gimp (lub np. edytor tekstowy gedit)
+
+W terminalu w ktorym sie to uruchomilo wcisnij CTRL+Z
+
+Sprobuj cos wyklikac w gimpie / gedicie
+
+Otworz dowolne inne okno i przesun je tak by czesciowo nachodzilo na okno gimpa / gedita i potem je odsun by odslonic w pelni okno gimpa / gedita
+
+Co sie stalo? Wstrzymalismy program gimp/gedit. Program wstrzymany za pomoca kombinacji CTRL+Z jest przenoszony w tlo (background). Efekt jest taki, ze taki program przestaje odpowiadac na cokolwiek.
+
+Komenda bg sluzy do wznowienia w tle wstrzymanego programu. Zobacz:
+
+Wpisz komende: bg
+
+Jak widac gimp/gedit ozyl (jesli nie, to zapytaj prowadzacego)
+
+Komenda fg sluzy do wznowienia na pierwszym planie wstrzymanego wczesniej procesu. Zobacz co sie stanie:
+
+Wpisz komende: fg
+
+Jak widac proces wrocil i można wcisnac na przyklad CTRL+C aby go zakonczyc.
+
+W momencie uruchamiania programu, mozemy od razu nakazac wykonanie go w tle. Sluzy do tego znak & umieszczony na koncu instrukcji.
+
+Zobacz:
+INFO: Jesli jakiegoś programu nie ma to zastap go innym, ktory znasz.
+
+Wykonaj komende gimp &
+
+Wykonaj komende gedit &
+
+Wykonaj komende geany &
+
+Zobacz co sie stalo (domyslam sie, ze uruchomily sie 3 programy, a na terminalu ciagle mozna cos pisac.
+
+
+
+Kolejna komenda to jobs. Sluzy ona do wyswietlania listy zadan (jobow; nie mylic z procesami) przeniesionych do tla.
+
+Przywroc program gedit (lub gimp, w kazdym razie nie uruchomiony jako ostatni program) z tla na pierwszy plan. Skorzystaj z jobs aby dowiedziec sie jakie maja numery poszczegolne zadania dzialajace w tle.
+skladnia: fg %(numer jobu)
+
+
+Wykonanie:
+Po otworzeniu programu gimp z terminalu i wcisnieciu Ctrl+Z, okno programu przestalo odpowiadac na cokolwiek. Po czesciowym nalozeniu innego okna na okno gimpa, zostaje rozmazany slad, okno sie nie odswieza. Po wpisaniu "bg" w terminalu, okno ponownie zaczelo reagowac, ale nie znajdowalo sie na pierwszym planie. Ponownie wstrzymalem program gimp za pomoca skrotu w terminalu i wznowilem po zaslonieciu innym oknem, ale poleceniem "fg" przez co okno znalazlo sie na pierwszym planie.
+
+Po wpisaniu komend "gimp &", "gedit &" i "geany &" uruchomily sie trzy programy, ale w tle. Okno terminalu pozostalo aktywne. Przy pomocy polecenia "jobs" sprawdzilem nr jobu programu gedit. Po wpisaniu komendy "fg %(nr jobu)" przywrocilem program gedit na pierwszy plan.

@@ -1,0 +1,17 @@
+23.10.2022
+
+Utworzyc we wlasnym katalogu domowym nieduza strukture podkatalogow i plikow tekstowych. Przydzielic rozne uprawnienia dostepu, nastepnie sprobowac wejsc do katalogow domowych innych uczestnikow zajec i sprawdzic, ktore z obiektow sa tam dla nas dostepne (i w jakim sensie). Sprobowac utworzyc wlasny plik w cudzym katalogu ("kukulcze jajko") oraz sprobowac usunac cudzy plik we wlasnym katalogu (co mozna zaobserwowac ?). Wyprobowac powyzsze operacje:
+-w trybie tekstowym;
+-przy uzyciu programu Midnight Commander (mc);
+
+
+-utworzylem strukture podkatalogow i plikow tekstowych, poprzydzielalem rozne uprawnienia dostepu
+-sprobowalem wejsc do katalogu kolegi Cypriana (s27281) i sprawdzilem, ktore z obiektow sa tam dla mnie dostepne
+-sprobowalem utworzyc wlasny plik w cudzym katalogu oraz sprobowalem usunac cudzy plik we wlasnym katalogu
+
+Wnioski:
+-domyslne uprawnienia dla innych uzytkownikow pozwalaja tylko na odczyt katalogow i plikow
+-niemozliwa jest edycja i tworzenie nowych katalogow i plikow bez wczesniejszej zmiany uprawnien(w celu wykonania cwiczenia Cyprian musial zmienic uprawnienia do katalogu)
+-mozna usunac cudzy plik we wlasnym katalogu
+
+Z powodu braku programu mc na Szuflandii wszystkie powyzsze polecenia zostaly wykonane tylko w trybie tekstowym.
