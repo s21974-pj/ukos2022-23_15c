@@ -1,0 +1,4 @@
+Jak wypisac wszystkie pliki w biezacym katalogu, ktorych nazwa zaczyna sie od al?
+
+Wykonanie:
+Nalezy uzyc komendy "ls | grep al*".

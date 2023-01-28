@@ -1,0 +1,4 @@
+Masz taki uklad katalogow, jak wyzej i ciagle jestes w katalogu kota. Jak utworzyc poddrzewo katalogow jan/kowalski w katalogu ale za pomoca jednej komendy?
+
+Wykonanie:
+Nalezy uzyc komendy "cd -p ../../../kot/ma/ale/jan/kowalski"

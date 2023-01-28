@@ -1,0 +1,4 @@
+Jak przyspieszyc wpisywanie komend w terminalu? Jaki klawisz pozwala na uzupelnianie komend?
+
+Wykonanie:
+W celu przyspieszenia wpisywania komend w terminalu, nalezy uzyc przycisku TAB.

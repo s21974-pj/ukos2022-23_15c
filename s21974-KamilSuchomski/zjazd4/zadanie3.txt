@@ -1,0 +1,10 @@
+Masz taki uklad katalogow, jak wyzej i ciagle jestes w katalogu kota. Jak przeniesc katalog ale do katalogu i uzywajac:
+
+zrodlo (sciezka wzgledna), miejsce docelowe (sciezka absolutna)
+
+zrodlo (sciezka absolutna), miejsce docelowe (sciezka wzgledna)
+
+Wykonanie:
+
+-zrodlo (sciezka wzgledna), miejsce docelowe (sciezka absolutna): polecenie "mv ../../../kot/ma/ale /tmp/ukos/ala/i"
+-zrodlo (sciezka absolutna), miejsce docelowe (sciezka wzgledna): polecenie "mv /tmp/ukos/kot/ma/ale ../../../ala/i"

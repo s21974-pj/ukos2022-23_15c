@@ -1,0 +1,4 @@
+Jak utworzyc plik z lista plikow w biezacym katalogu?
+
+Wykonanie:
+Nalezy uzyc polecenia "ls > lista_plikow_w_biezacym_katalogu.txt"

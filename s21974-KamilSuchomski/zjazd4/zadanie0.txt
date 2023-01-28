@@ -1,0 +1,9 @@
+Przypuscmy, ze nie mozesz utworzyc zadnego pliku na swoim koncie uczelnianym np. na szuflandii.
+Co sie moglo stac? (wymien co najmniej 2 opcje)
+
+Zakladamy, ze mozesz zalogowac sie w konsoli i nie masz zaleglosci w oplatach.
+
+Odpowiedz:
+-brak praw dostepu do katalogu
+-brak dostepnej pamieci
+-brak platnosci = brak dostepu do szuflandii = nie mozna utworzyc zadnego pliku ;) 

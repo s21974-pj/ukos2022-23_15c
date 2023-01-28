@@ -1,0 +1,4 @@
+Jak zamknac program, ktory nie reaguje na ctrl+c ?
+
+Wykonanie:
+Uzyc polecenia "kill -9 nr_pid_procesu".
