@@ -1,6 +1,6 @@
 23.10.2022
 
-Znalezc w swoim katalogu domowym podkatalog public_html (jesli go nie ma, to utworzyc; musi się on nazywac DOKLADNIE tak jak podano, pisane malymi literami z podkresleniem zamiast spacji pomiedzy slowami). Umiescic w nim plik o nazwie strona.html o nastepujacej zawartosci:
+Znalezc w swoim katalogu domowym podkatalog public_html (jesli go nie ma, to utworzyc; musi sie on nazywac DOKLADNIE tak jak podano, pisane malymi literami z podkresleniem zamiast spacji pomiedzy slowami). Umiescic w nim plik o nazwie strona.html o nastepujacej zawartosci:
 
 <HTML>
 
@@ -12,7 +12,7 @@ Znalezc w swoim katalogu domowym podkatalog public_html (jesli go nie ma, to utw
 
 </HTML>
 
--Sprawdzic, jakie sa minimalne uprawnienia dostepu, które trzeba przydzielic do:
+-Sprawdzic, jakie sa minimalne uprawnienia dostepu, ktore trzeba przydzielic do:
 
 katalogu domowego;
 
@@ -23,6 +23,6 @@ pliku strona.html, aby zawartosc pliku byla widoczna w przegladarce internetowej
 Wykokanie:
 
 Umiesclilem plik strona.html w podkatalogu public_html. Minimalne uprawnienia dostepu dla:
--katalogu domowego to 705
--katalogu public_html to 705
--pliku strona.html to 705 
+-katalogu domowego to xx1
+-katalogu public_html to xx1   --- dla wszystkich katalogow i pliku minimalne uprawnienia to prawo do wykonania dla others
+-pliku strona.html to xx1 

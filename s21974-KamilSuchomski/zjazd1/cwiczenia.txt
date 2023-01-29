@@ -80,12 +80,12 @@ Dzieje sie tak, poniewaz jako uzytkownik nie ma dostepu do katalogu root.
 
 13.Zobacz, co sie stanie, jesli wcisiesz kombinacje klawiszy: Ctrl+Alt+F1
 -maszyna wirtualna Ubuntu-
-Po wcisnieciu kombinacji Ctrl+Alt+F1 nastapilo wylogowanie z systemu.
+Po wcisnieciu kombinacji Ctrl+Alt+F1 okno teminala staje sie pelnoekranowe.
 
 
 14.A teraz co sie stanie po: Alt+F7
 -maszyna wirtualna Ubuntu-
-Po wcisnieciu kombinacji Alt+F7 moge zmienic polozenie okna terminala za pomoca myszy.
+Po wcisnieciu kombinacji Alt+F7 moge zmienic polozenie okna terminala za pomoca klawiszy strzalek.
 
 
 

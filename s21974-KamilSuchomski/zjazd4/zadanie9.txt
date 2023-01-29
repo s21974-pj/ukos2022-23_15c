@@ -2,4 +2,4 @@ Jak uruchomic program by nie blokowal terminala. Ss 2 sposoby. Jakie?
 
 Wykonanie:
 -uruchomic program z dodaniem znaku "&" po spacji, po nazwie programu, np. "gimp &"
--po uruchomieniu programu skorzystac z kombinacji Ctrl+Z, program zostanie wtedy zatrzymany i bedzie w tle
+-po uruchomieniu programu skorzystac z kombinacji Ctrl+Z, program zostanie wtedy zatrzymany i bedzie w tle, pozniej nalezy uzyc polecenia "bg", zeby wznowic jego dzialanie w tle

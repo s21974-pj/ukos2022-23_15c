@@ -13,6 +13,6 @@ Wszystkie wersje powinny byc zapisane w jednym poleceniu (bez uzywania && czy | 
 
 Wykonanie:
 Nalezy uzyc polecen:
--wersja oktalna: "chmod 751 ala"
--wersja ze znakiem rownosci: "chmod g=r,u=rwx,a=x ala"
--wersja literowa z plusami i minusami: "chmod a-rw,a+x,g+r,u+rwx ala"
+-wersja oktalna: "chmod 741 ala"
+-wersja ze znakiem rownosci: "chmod g=r,u=rwx,o=x ala"
+-wersja literowa z plusami i minusami: "chmod u+rwx,g+r,o+x ala"
