@@ -20,9 +20,9 @@ katalogu public_html;
 
 pliku strona.html, aby zawartosc pliku byla widoczna w przegladarce internetowej pod adresem http://szuflandia.pjwstk.edu.pl/~twoj_login/strona.html
 
-Wykokanie:
+Wykonanie:
 
 Umiesclilem plik strona.html w podkatalogu public_html. Minimalne uprawnienia dostepu dla:
--katalogu domowego to xx1
--katalogu public_html to xx1   --- dla wszystkich katalogow i pliku minimalne uprawnienia to prawo do wykonania dla others
--pliku strona.html to xx1 
+-katalogu domowego to 701
+-katalogu public_html to 701
+-pliku strona.html to 704

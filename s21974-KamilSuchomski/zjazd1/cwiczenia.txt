@@ -80,12 +80,12 @@ Dzieje sie tak, poniewaz jako uzytkownik nie ma dostepu do katalogu root.
 
 13.Zobacz, co sie stanie, jesli wcisiesz kombinacje klawiszy: Ctrl+Alt+F1
 -maszyna wirtualna Ubuntu-
-Po wcisnieciu kombinacji Ctrl+Alt+F1 okno teminala staje sie pelnoekranowe.
+Po wcisnieciu kombinacji Ctrl+Alt+F1 wylacza sie GUI, przez co dostepna jest tylko konsola tekstowa i dlatego zajmuje caly ekran(nie jest pelnoekranowym oknem).
 
 
 14.A teraz co sie stanie po: Alt+F7
 -maszyna wirtualna Ubuntu-
-Po wcisnieciu kombinacji Alt+F7 moge zmienic polozenie okna terminala za pomoca klawiszy strzalek.
+Po wcisnieciu kombinacji Alt+F7 nastepuje powrot do GUI.
 
 
 

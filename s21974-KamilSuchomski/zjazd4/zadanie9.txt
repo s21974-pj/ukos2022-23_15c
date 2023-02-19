@@ -1,4 +1,4 @@
-Jak uruchomic program by nie blokowal terminala. Ss 2 sposoby. Jakie?
+Jak uruchomic program by nie blokowal terminala. Sa 2 sposoby. Jakie?
 
 Wykonanie:
 -uruchomic program z dodaniem znaku "&" po spacji, po nazwie programu, np. "gimp &"
